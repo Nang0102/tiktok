@@ -2,7 +2,11 @@ import classNames from "classnames/bind";
 import { React, useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faCircleQuestion,
   faCircleXmark,
+  faEarthAsia,
+  faEllipsisVertical,
+  faKeyboard,
   faMagnifyingGlass,
   faSpinner,
 } from "@fortawesome/free-solid-svg-icons";
@@ -13,8 +17,26 @@ import styles from "./Header.module.scss";
 import images from "~/assets/image/index";
 import AccountItem from "~/components/AccountItem";
 import Button from "~/components/Button";
+import Menu from "~/components/Popper/Menu";
 
 const cx = classNames.bind(styles);
+
+const Menu_Items = [
+  {
+    icon: <FontAwesomeIcon icon={faEarthAsia} />,
+    title: "English",
+  },
+  {
+    icon: <FontAwesomeIcon icon={faCircleQuestion} />,
+    title: "Feedback & help",
+    to: "/feedback",
+  },
+  {
+    icon: <FontAwesomeIcon icon={faKeyboard} />,
+    title: "Keyboard shortcuts",
+  },
+];
+
 function Header() {
   const [searchResult, setSearchResult] = useState([]);
 
@@ -64,6 +86,11 @@ function Header() {
         <div className={cx("actions")}>
           <Button text> Upload</Button>
           <Button primary>Log in</Button>
+          <Menu items={Menu_Items}>
+            <button className={cx("more-btn")}>
+              <FontAwesomeIcon icon={faEllipsisVertical} />
+            </button>
+          </Menu>
         </div>
       </div>
     </header>
