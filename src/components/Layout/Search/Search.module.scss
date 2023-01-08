@@ -53,6 +53,16 @@
     color: rgba(22, 24, 35, 0.34);
 }
 
+.loading {
+    animation: spinner 0.8s linear infinite;
+}
+
+@keyframes spinner {
+    to {
+        rotate: 360deg;
+    }
+}
+
 .search-btn {
     width: var(--search-button-width);
     height: 100%;
