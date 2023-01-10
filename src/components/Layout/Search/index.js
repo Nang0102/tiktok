@@ -59,6 +59,8 @@ function Search() {
   };
 
   return (
+    // using a wrapper <div> tag around the reference element sovles
+    // this by creating a new parentNode context.
     <div>
       <HeadlessTippy
         interactive
