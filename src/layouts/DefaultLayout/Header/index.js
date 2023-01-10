@@ -20,8 +20,8 @@ import Button from "~/components/Button";
 import Menu from "~/components/Popper/Menu";
 import { BoxIcon, MessageIcon, UploadIcon } from "~/components/Icons";
 import Image from "~/components/Image";
-import Search from "~/components/Layout/Search";
-import routesConfig from "~/config/routesConfig";
+import Search from "~/layouts/Search";
+import config from "~/config";
 
 const cx = classNames.bind(styles);
 const currentUser = true;
@@ -31,7 +31,7 @@ const Menu_Items = [
     icon: <FontAwesomeIcon icon={faEarthAsia} />,
     title: "English",
     children: {
-      title: "Language",
+      title: "Language ",
       data: [
         {
           type: "language",
@@ -41,7 +41,7 @@ const Menu_Items = [
         {
           type: "language",
           code: "vi",
-          title: "Vietnames",
+          title: "Vietnamese",
         },
       ],
     },
@@ -94,10 +94,9 @@ function Header() {
   return (
     <header className={cx("wrapper")}>
       <div className={cx("inner")}>
-        <Link to={routesConfig.home} className={cx("logo")}>
+        <Link to={config.routesConfig.home} className={cx("logo")}>
           <img src={images.logo} alt="Tiktok" />
         </Link>
-        {/* Search */}
         <Search />
         <div className={cx("actions")}>
           {currentUser ? (

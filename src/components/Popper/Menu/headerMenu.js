@@ -1,5 +1,5 @@
 import React from "react";
-
+import PropTypes from "prop-types";
 import styles from "./Menu.module.scss";
 import classNames from "classnames/bind";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -16,5 +16,9 @@ function HeaderMenu({ title, onBack }) {
     </div>
   );
 }
+HeaderMenu.propTypes = {
+  onBack: PropTypes.func.isRequired,
+  title: PropTypes.string.isRequired,
+};
 
 export default HeaderMenu;

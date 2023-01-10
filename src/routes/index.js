@@ -2,32 +2,32 @@ import Home from "~/pages/Home";
 import Following from "~/pages/Following";
 import Profile from "~/pages/Profile";
 import Upload from "~/pages/Upload";
-import HeaderOnly from "~/components/Layout/HeaderOnly";
+import HeaderOnly from "~/layouts/HeaderOnly";
 import Search from "~/pages/Search";
 
-import routesConfig from "~/config/routesConfig";
+import config from "~/config/index";
 
 // Public routes: để những path không cần login cũng xem đc
 const publicRoutes = [
   {
-    path: routesConfig.home,
+    path: config.routesConfig.home,
     component: Home,
   },
   {
-    path: routesConfig.following,
+    path: config.routesConfig.following,
     component: Following,
   },
   {
-    path: routesConfig.profile,
+    path: config.routesConfig.profile,
     component: Profile,
   },
   {
-    path: routesConfig.upload,
+    path: config.routesConfig.upload,
     component: Upload,
     layout: HeaderOnly,
   },
   {
-    path: routesConfig.search,
+    path: config.routesConfig.search,
     component: Search,
     layout: null,
   },
