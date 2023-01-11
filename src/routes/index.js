@@ -4,6 +4,7 @@ import Profile from "~/pages/Profile";
 import Upload from "~/pages/Upload";
 import HeaderOnly from "~/layouts/HeaderOnly";
 import Search from "~/pages/Search";
+import Live from "~/pages/Live";
 
 import config from "~/config/index";
 
@@ -16,6 +17,10 @@ const publicRoutes = [
   {
     path: config.routesConfig.following,
     component: Following,
+  },
+  {
+    path: config.routesConfig.live,
+    component: Live,
   },
   {
     path: config.routesConfig.profile,

@@ -20,7 +20,7 @@ import Button from "~/components/Button";
 import Menu from "~/components/Popper/Menu";
 import { BoxIcon, MessageIcon, UploadIcon } from "~/components/Icons";
 import Image from "~/components/Image";
-import Search from "~/layouts/Search";
+import Search from "~/layouts/components/Search";
 import config from "~/config";
 
 const cx = classNames.bind(styles);
