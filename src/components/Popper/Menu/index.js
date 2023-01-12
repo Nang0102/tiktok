@@ -1,5 +1,5 @@
 import { React, useState } from "react";
-import { Wrapper as PopperWrapper } from "~/components/Popper";
+import { PopperWrapper } from "~/components/Popper";
 import MenuItem from "./MenuItem";
 import HeaderMenu from "./headerMenu";
 
