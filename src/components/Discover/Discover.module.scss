@@ -1,0 +1,37 @@
+.wrapper {
+    border-top: 1px solid #e3e3e4;
+}
+
+.label {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 12px;
+}
+
+.item-tag {
+    width: fit-content;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    margin-right: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #161823bf;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    transition: background-color 200ms ease-in-out 0s;
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+}
+
+.icon {
+    margin-top: 8px;
+    font-size: 1.4rem;
+}
+
+.title {
+    font-size: 1.4rem;
+    padding-left: 6px;
+    color: rgba(22, 24, 35, 0.75);
+}

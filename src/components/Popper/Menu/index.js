@@ -25,18 +25,6 @@ function Menu({
     setHistory((prev) => prev.slice(0, prev.length - 1));
   };
 
-  const renderResult = (attrs) => (
-    <div className={cx("menu-list")} tabIndex="-1" {...attrs}>
-      {" "}
-      <PopperWrapper className={cx("menu-popper")}>
-        {history.length > 1 && (
-          <HeaderMenu title={current.title} onBack={handleBackMenu} />
-        )}
-        <div className={cx("menu-scrollable")}>{renderItems()}</div>
-      </PopperWrapper>
-    </div>
-  );
-
   const renderItems = () => {
     return current.data.map((item, index) => {
       const isParent = !!item.children; //convert boolean cua item.children
@@ -55,6 +43,18 @@ function Menu({
       );
     });
   };
+
+  const renderResult = (attrs) => (
+    <div className={cx("menu-list")} tabIndex="-1" {...attrs}>
+      {" "}
+      <PopperWrapper className={cx("menu-popper")}>
+        {history.length > 1 && (
+          <HeaderMenu title={current.title} onBack={handleBackMenu} />
+        )}
+        <div className={cx("menu-scrollable")}>{renderItems()}</div>
+      </PopperWrapper>
+    </div>
+  );
 
   const handleResetToFirstPage = () => {
     setHistory((prev) => prev.slice(0, 1));

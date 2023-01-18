@@ -100,18 +100,18 @@ function Header() {
         <Search />
         <div className={cx("actions")}>
           {currentUser ? (
-            <div className={cx("current-user")}>
-              <Tippy delay={[0, 200]} content="Upload video" placement="bottom">
+            <div>
+              <Tippy delay={[0, 50]} content="Upload video" placement="bottom">
                 <button className={cx("action-btn")}>
                   <UploadIcon />
                 </button>
               </Tippy>
-              <Tippy content="Message" placement="bottom">
+              <Tippy delay={[0, 50]} content="Message" placement="bottom">
                 <button className={cx("action-btn")}>
                   <MessageIcon />
                 </button>
               </Tippy>
-              <Tippy content="Inbox" placement="bottom">
+              <Tippy delay={[0, 50]} content="Inbox" placement="bottom">
                 <button className={cx("action-btn")}>
                   <BoxIcon />
                   <span className={cx("badge")}>12</span>
@@ -119,8 +119,9 @@ function Header() {
               </Tippy>
             </div>
           ) : (
-            <div>
+            <div className={cx("outside-btn")}>
               <Button text> Upload</Button>
+
               <Button primary>Log in</Button>
             </div>
           )}

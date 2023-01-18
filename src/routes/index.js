@@ -36,6 +36,16 @@ const publicRoutes = [
     component: Search,
     layout: null,
   },
+  {
+    path: config.routesConfig.tag,
+    component: Home,
+    layout: null,
+  },
+  {
+    path: config.routesConfig.music,
+    component: Home,
+    layout: null,
+  },
 ];
 
 // Private routes: để những path cần phải login mới xem đc

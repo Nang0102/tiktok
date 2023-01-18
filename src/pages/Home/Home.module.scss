@@ -1,0 +1,39 @@
+.wrapper-home {
+  position: absolute;
+}
+.wrapper {
+  display: flex;
+  margin-top: 45px;
+  max-height: 400px;
+}
+
+.avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.info {
+  margin-left: 10px;
+}
+
+.nickname {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+.follow-btn {
+  margin-left: 25rem;
+  margin-top: 20px;
+}
+
+.video {
+  margin-left: 6.6rem;
+}
+
+.video-border {
+  margin-top: 20px;
+  border-bottom: 1px solid rgba(22, 24, 35, 0.06);
+}

@@ -1,0 +1,40 @@
+.wrapper {
+    border-top: 1px solid #e3e3e4;
+    color: rgba(22, 24, 35, 0.75);
+}
+
+.item {
+    display: inline-block;
+    margin-top: 8px;
+    margin-right: 8px;
+    font-size: 1.4rem;
+    color: rgba(22, 24, 35, 0.75);
+    &:hover {
+        border-bottom: 1px solid #e3e3e4;
+    }
+}
+
+.tippy-btn {
+    font-weight: 600;
+    padding: 15px 16px 20px;
+    width: fit-content;
+    max-width: 200px;
+    cursor: pointer;
+}
+
+.tippy-text {
+    text-align: center;
+    &:hover {
+        color: red;
+    }
+}
+
+.more-btn {
+    padding: 15px 0 15px 0;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.text-final {
+    font-size: 1.4rem;
+}

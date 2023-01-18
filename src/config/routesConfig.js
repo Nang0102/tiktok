@@ -5,5 +5,7 @@ const routesConfig = {
   upload: "/upload",
   search: "/search",
   live: "/live",
+  tag: "/tag/happy",
+  music: "/music/thienthantinhyeu",
 };
 export default routesConfig;

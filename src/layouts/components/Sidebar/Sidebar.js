@@ -12,13 +12,15 @@ import {
   UserGroupIcon,
 } from "~/components/Icons";
 import SuggestedAccounts from "~/components/SuggestedAccounts";
+import Discover from "~/components/Discover";
+import Footer from "~/components/Footer";
 
 const cx = classNames.bind(styles);
 
 function Sidebar() {
   return (
     <aside className={cx("wrapper")}>
-      <Menu>
+      <Menu className={cx("header")}>
         <MenuItem
           title="For You"
           to={config.routesConfig.home}
@@ -38,8 +40,12 @@ function Sidebar() {
           activeIcon={<LiveActiveIcon />}
         />
       </Menu>
-      <SuggestedAccounts label="Suggested accounts" />
-      <SuggestedAccounts label="Following accounts" />
+      <div className={cx("item")}>
+        <SuggestedAccounts label="Suggested accounts" />
+        <SuggestedAccounts label="Following accounts" />
+        <Discover label="Discover" />
+        <Footer />
+      </div>
     </aside>
   );
 }

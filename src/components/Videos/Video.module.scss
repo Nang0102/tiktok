@@ -1,0 +1,45 @@
+.container {
+  font-size: 16px;
+  max-width: 510px;
+  display: block;
+}
+
+.title {
+}
+
+.tag {
+  font-weight: 600;
+}
+
+.trend {
+  margin: 10px 0 10px 0;
+  line-height: 3rem;
+}
+.wrapper-video-match {
+  display: flex;
+  max-height: 550px;
+}
+.video {
+  display: block;
+  object-fit: cover;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.match {
+  font-size: 2.5rem;
+  margin-top: 31rem;
+  margin-left: 2rem;
+}
+.match-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: rgba(22, 24, 35, 0.06);
+  cursor: pointer;
+}
+.match-statistic {
+  font-size: 1.6rem;
+  padding: 10px 0 10px 0;
+}
